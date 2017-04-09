@@ -1,0 +1,23 @@
+{
+  "name": "shame-shame",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Finding words",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Find them!",
+    "default_icon": "shame.jpg",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://*/*",
+    "activeTab",
+    "http://*/*",
+    "tabs"
+  ]
+}
