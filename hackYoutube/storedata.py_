@@ -1,0 +1,27 @@
+#!/usr/bin/python
+
+import mysql.connector 
+import sys 
+import json 
+import os
+import argparse
+
+arg_parser = argparse.ArgumentParser("Store data in database")
+arg_parser.add_argument("-f", "--filename", required=True, help="Filename to internalize")
+args = arg_parser.parse_args()
+data = open(args.filename, "rb")
+csv_data = data.read()
+csv_data = csv_data.strip()
+words=csv_data.split(',')
+con = mysql.connector.connect(user='root',password='toor',host='127.0.0.1',database='hackYoutube')
+cur = con.cursor()
+for word in words:
+     word = word.replace(' ','')
+     print word
+     arg = (str(word),)
+     query = ("INSERT INTO badWords values (%s)")
+     cur.execute(query, arg)
+     con.commit()
+     cur.close()
+     con.close()
+

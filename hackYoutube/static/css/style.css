@@ -1,0 +1,266 @@
+.header {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#footer {
+    position:fixed;
+    bottom:0;
+    left: 40%;
+}
+
+.ImageLoadingPopUp {
+    background: url(images/LoadingImage.gif) no-repeat center;
+    width: 450px;
+    height: 150px;
+    margin-left: 35%;
+	margin-top: 10%;
+}
+
+.LoadingPopUp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    width: 100%;
+    height: 100%;	
+    z-index: 100;
+}
+
+.dimScreen {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #A9A9A9;
+    z-index: 10;
+    opacity: 1;
+    left: 0px;
+}
+
+.textSearch {
+    background:rgba(0, 0, 0, 0.4);
+    width: 50%;
+    margin-left: 20%;
+    border:none;
+    resize:none;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding:15px;
+    box-shadow:0px 1px 0px rgba(225, 225, 225, 0.2), 0px 1px 0px rgba(0, 0, 0, 0.3) inset;
+    outline:none;
+    color:white;
+    font-weight:bold;
+    float:left;
+    text-shadow:1px 1px 0px black;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.textSearch:focus {
+    width:50%;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.buttonSearch {
+    float:left;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border:none;
+    background: #606c88;
+    background: -moz-linear-gradient(top, #606c88 0%, #3f4c6b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #606c88), color-stop(100%, #3f4c6b));
+    background: -webkit-linear-gradient(top, #606c88 0%, #3f4c6b 100%);
+    background: -o-linear-gradient(top, #606c88 0%, #3f4c6b 100%);
+    background: -ms-linear-gradient(top, #606c88 0%, #3f4c6b 100%);
+    background: linear-gradient(to bottom, #606c88 0%, #3f4c6b 100%);
+    padding:15px;
+    box-shadow:0px 1px 0px rgba(225, 225, 225, 0.2), 0px 1px 0px rgba(0, 0, 0, 0.4) inset;
+    outline:none;
+    width:10%;
+    text-transform:uppercase;
+    color:white;
+    letter-spacing:2px;
+    text-shadow:1px 1px 0px rgba(0, 0, 0, 0.6);
+    cursor:pointer;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.buttonSearch:active {
+    box-shadow:inset 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+#Results, #IndividualResults {
+	display: none;
+	margin-bottom: 50px;
+}
+
+.IndividualVideos, .TopVideos10 {
+	border-radius: 5px;
+    box-shadow: -5px 5px 3px #888888;
+	margin: 10px;
+	margin-left: 25px;
+}
+
+.UserPicStyle {
+	width: 145px;
+    height: 145px;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ff803c;
+    cursor: not-allowed;
+}
+
+.BlackText {
+    font-family: "Segoe UI";
+    font-size: 30px;
+    color: black;
+	text-align: center;
+}
+
+.smallText {
+    font-size: 30px !important;
+}
+
+.outerDiv {
+	width: 150px;
+    height: 150px;
+}
+
+.BorderStyle {
+	border-width: 2px;
+    border-style: solid;
+    border-color: #ff803c;
+}
+
+.DisplayInline {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.DivInsideStyle {
+	margin-left: 30px;
+}
+
+.userNameStyle {
+	font-size: 25px;
+    width: 200px;
+	font-weight: bold;
+}
+
+.badWordsStyle {
+	font-size: 20px;
+    width: 200px;
+}
+
+.outerDiv  {
+	margin: 10px;
+}
+
+.UnderLine {
+	text-decoration: underline;
+	margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.iframeVideo {
+	width: 100%;
+    height: 300px;
+}
+
+.BWRStyle {
+	font-size: 25px;
+    width: 100%;
+	font-weight: bold;	
+	text-align: center;
+}
+
+.EmbedOuterDiv  {
+	padding: 50px;
+	margin-bottom: 10px;
+}
+
+.BWR {
+	font-weight: bold;
+}
+
+.IndividualframeVideo {
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    height: 500px;	
+}
+
+.OuterIndividualsLength {
+	overflow-x: auto;
+	margin: 50px;	
+	text-align: center;
+	background: #F5F5F5;
+}
+
+.OuterIndividualsLength::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.OuterIndividualsLength::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.OuterIndividualsLength::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.UserPicStyleSquare {
+	width: 75px;
+    height: 75px;
+    margin: 8px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ff803c;
+    cursor: not-allowed;
+}
+
+.UpperText {
+	margin-bottom: 0px !important;
+}
+
+.smalldivElement {
+	text-align: center;
+}
